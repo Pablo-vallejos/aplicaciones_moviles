@@ -2,12 +2,25 @@ package com.example.myapplication
 
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.TextView
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 
 class MainActivity : AppCompatActivity() {
-   var player="p1"
+    private var player="p1"
+    private lateinit var b1: Button
+    private lateinit var b2: Button
+    private lateinit var b3: Button
+    private lateinit var b4: Button
+    private lateinit var b5: Button
+    private lateinit var b6: Button
+    private lateinit var b7: Button
+    private lateinit var b8: Button
+    private lateinit var b9: Button
+    private lateinit var resultado: TextView
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -24,6 +37,7 @@ class MainActivity : AppCompatActivity() {
         val b7 = findViewById<Button>(R.id.b7)
         val b8 = findViewById<Button>(R.id.b8)
         val btnReset = findViewById<Button>(R.id.btnReset)
+        resultado = findViewById(R.id.resultado)
 
         b1.setOnClickListener {
             buttonClick(b1)
@@ -66,7 +80,7 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
-       fun buttonClick(btn:Button){
+       private fun buttonClick(btn:Button){
             if (btn.text == "") {
                 if (player == "p1") {
                     player = "p2"
@@ -123,8 +137,8 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-        fun toast(msg:String){
-            Toast.makeText(this@MainActivity , msg,Toast.LENGHT_SHORT).show()
+        fun toast(msg: String) {
+        Toast.makeText(this@MainActivity, msg, Toast.LENGTH_SHORT).show()
         }
 
         fun reset(){
