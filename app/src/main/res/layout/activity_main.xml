@@ -4,15 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#BEEDDADA"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/menuJuegardos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/comic_neue"
+        android:text="Menu Juegardos"
+        android:textColor="#1531E4"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
-        android:id="@+id/TatetiBtn"
+        android:id="@+id/tatetiBtn"
         android:layout_width="113dp"
         android:layout_height="59dp"
         android:text="TATETI"
-        tools:layout_editor_absoluteX="78dp"
-        tools:layout_editor_absoluteY="213dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.461" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="261dp"
+        android:layout_height="38dp"
+        android:text="Proximamente nuevos \n Juegardos para tu entretenimiento"
+        android:textAlignment="center"
+        android:textColor="#090909"
+        android:textColorLink="#191717"
+        app:layout_constraintBottom_toTopOf="@+id/tatetiBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuJuegardos"
+        app:layout_constraintVertical_bias="0.316" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView
@@ -20,14 +21,18 @@ class TaTeTi_Activity : AppCompatActivity() {
     private lateinit var b9: Button
     private lateinit var btnReset: Button
     private lateinit var resultado: TextView
+    private lateinit var homeBtnTateti: Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ta_te_ti)
 
-
         // Vincula el botón con el ID definido en el archivo XML
+
+
+
+
         b1 = findViewById<Button>(R.id.b1)
         b2 = findViewById<Button>(R.id.b2)
         b3 = findViewById<Button>(R.id.b3)
@@ -39,6 +44,12 @@ class TaTeTi_Activity : AppCompatActivity() {
         b8 = findViewById<Button>(R.id.b8)
         btnReset = findViewById<Button>(R.id.btnReset)
         resultado = findViewById(R.id.resultado)
+        homeBtnTateti = findViewById<Button>(R.id.homeBtnTateti)
+
+        homeBtnTateti.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
 
         b1.setOnClickListener {
             buttonClick(b1)
