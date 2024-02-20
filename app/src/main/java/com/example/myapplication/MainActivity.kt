@@ -1,16 +1,14 @@
 package com.example.myapplication
 
-import android.annotation.SuppressLint
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
-import android.widget.TextView;
-import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 
 class MainActivity : AppCompatActivity() {
     private lateinit var tatetiBtn: Button
+    private lateinit var puntajesBtn: Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,11 +18,17 @@ class MainActivity : AppCompatActivity() {
 
         // Vincula el botón con el ID definido en el archivo XML
         tatetiBtn = findViewById<Button>(R.id.tatetiBtn)
-
         tatetiBtn.setOnClickListener {
             val intent = Intent(this, TaTeTi_Activity::class.java)
             startActivity(intent)
         }
+
+        puntajesBtn = findViewById<Button>(R.id.puntajesBtn)
+        puntajesBtn.setOnClickListener {
+            val intent = Intent(this, Puntaje_Activity::class.java)
+            startActivity(intent)
+        }
+
     }
 }
 

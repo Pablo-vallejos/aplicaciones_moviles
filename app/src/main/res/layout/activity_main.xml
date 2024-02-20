@@ -33,6 +33,21 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.461" />
 
+    <Button
+        android:id="@+id/puntajesBtn"
+        android:layout_width="110dp"
+        android:layout_height="47dp"
+        android:text="Puntajes"
+        android:textColorHighlight="#4E51D8"
+        android:textColorLink="#2F349C"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.935" />
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="261dp"
