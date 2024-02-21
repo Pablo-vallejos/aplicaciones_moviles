@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
+enum class  ProviderType{
+    BASIC
+}
 
 class MainActivity : AppCompatActivity() {
     private lateinit var tatetiBtn: Button
