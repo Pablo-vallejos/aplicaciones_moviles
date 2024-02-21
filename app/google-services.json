@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "59151962475",
+    "project_id": "finalaplicaiconesmoviles",
+    "storage_bucket": "finalaplicaiconesmoviles.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:59151962475:android:d098ddbba281763c75bc2e",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrMisAaQXLDhrBZpnIMVm3ZPIXEerILNI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
